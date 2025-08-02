@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SockSense</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffeaa7, #fab1a0);
+            font-family: 'Comic Sans MS', cursive;
+            text-align: center;
+            padding: 50px;
+            color: #2d3436;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            animation: wiggle 1.5s infinite;
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(-2deg); }
+            50% { transform: rotate(2deg); }
+        }
+
+        button {
+            background-color: #6c5ce7;
+            color: white;
+            font-size: 1.5em;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #a29bfe;
+            transform: scale(1.1);
+        }
+
+        .sock-img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.9em;
+            color: #636e72;
+        }
+    </style>
+</head>
+<body>
+
+    <img class="sock-img" src="https://cdn-icons-png.flaticon.com/512/1065/1065708.png" alt="sock">
+    <h1>SockSense: The Ultimate Sock Judge</h1>
+
+    <form action="/capture" method="post">
+        <button type="submit">Capture Sock Pair</button>
+    </form>
+
+    <footer>
+        <p>“Because fashion starts from the bottom.”</p>
+    </footer>
+
+</body>
+</html>
